@@ -8,8 +8,11 @@ if [ "${DISTRO_NAME}" = "Ubuntu" ]; then
     . "${DEVENV}/ubuntu.sh"
 fi
 
+# spacevim
+curl -sLf https://spacevim.org/install.sh | bash
+
 # color scheme for Gnome terminal
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/denysdovhan/gnome-terminal-one/master/one-dark.sh)"
+bash gnome-one-dark.sh
 
 # my fonts
 sudo mkdir -p "/usr/share/fonts/opentype/devenv/"
@@ -27,5 +30,7 @@ pip3 install --user flake8 yapf autoflake isort coverage ipython
 
 # basic Data Science
 curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -o /tmp/install_miniconda.sh
-bash /tmp/install_miniconda.sh
+bash /tmp/install_miniconda.sh -b
+
+chsh -s /bin/zsh $(whoami)
 

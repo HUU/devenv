@@ -6,6 +6,8 @@ if [[ ! -e "${HOME}/.tmux.conf" ]]; then
   ln -s "${SCRIPTPATH}/tmux.conf" "${HOME}/.tmux.conf"
 fi
 
+setopt share_history
+
 # oh-my-zsh
 export ZSH="${SCRIPTPATH}/oh-my-zsh"
 export ZSH_CUSTOM="${SCRIPTPATH}/custom"
