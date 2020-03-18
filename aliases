@@ -1,0 +1,25 @@
+alias _up='builtin cd ..'
+alias up1='_up && ls'
+alias up2='_up && _up && ls'
+alias up3='_up && _up && _up && ls'
+alias up4='_up && _up && _up && _up && ls'
+alias up5='_up && _up && _up && _up && _up && ls'
+alias up6='_up && _up && _up && _up && _up && _up && ls'
+alias up7='_up && _up && _up && _up && _up && _up && _up && ls'
+alias up8='_up && _up && _up && _up && _up && _up && _up && _up && ls'
+alias up9='_up && _up && _up && _up && _up && _up && _up && _up && _up && ls'
+
+alias la='ls -a'
+alias lal='ls -al'
+alias ll='ls -l'
+alias dir='ll'
+
+alias clear='/usr/bin/clear; ls'
+alias cls='clear'
+alias c='/usr/bin/clear'
+
+
+git config --global alias.unstage 'reset HEAD --'
+
+
+alias dup='docker stack deploy --with-registry-auth -c'
