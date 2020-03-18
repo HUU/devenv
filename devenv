@@ -32,6 +32,8 @@ bindkey "[C" forward-word
 bindkey "^[a" beginning-of-line
 bindkey "^[e" end-of-line
 
+export PATH="${HOME}/miniconda3/bin:${PATH}"
+
 # custom stuff
 source "${SCRIPTPATH}/aliases"
 source "${SCRIPTPATH}/functions"
