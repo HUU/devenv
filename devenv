@@ -5,7 +5,7 @@ export DEVENV="${SCRIPTPATH}"
 setopt share_history
 
 # oh-my-zsh
-export ZSH="${SCRIPTPATH}/oh-my-zsh"
+export ZSH="${SCRIPTPATH}/dependencies/oh-my-zsh"
 export ZSH_CUSTOM="${SCRIPTPATH}/zsh-custom"
 ZSH_THEME="geometry/geometry"
 plugins=(

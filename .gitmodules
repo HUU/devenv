@@ -1,6 +1,6 @@
 [submodule "oh-my-zsh"]
-	path = oh-my-zsh
+	path = dependencies/oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
 [submodule "tmux-onedark-theme"]
-	path = tmux-onedark-theme
+	path = dependencies/tmux-onedark-theme
 	url = https://github.com/odedlaz/tmux-onedark-theme
