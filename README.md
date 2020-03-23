@@ -23,10 +23,8 @@ Logout and log back in (`setup.sh` changes your login shell to ZSH).
 This is an attempt at exporting my hand-rolled development setup from my Mac, which I am retiring, into something I can clone and activate on any *nix-like box with minimal effort.
 
 Some things that are still missing:
-* Spacevim settings
 * VSCode settings
 * Frequently used utilities (htop, nc, tcpdump, etc)
 * Preconfigured conda environment for Jupyter
-* Some sort of Hyper-key replacement (mapping Caps Lock to Ctrl+Alt+Shift+b)
 * Bazel, cmake
 * .NET? do I need this any more?

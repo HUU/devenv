@@ -2,15 +2,11 @@ SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 export DEVENV="${SCRIPTPATH}"
 
 # tmux
-if [[ ! -e "${HOME}/.tmux.conf" ]]; then
-  ln -s "${SCRIPTPATH}/tmux.conf" "${HOME}/.tmux.conf"
-fi
-
 setopt share_history
 
 # oh-my-zsh
 export ZSH="${SCRIPTPATH}/oh-my-zsh"
-export ZSH_CUSTOM="${SCRIPTPATH}/custom"
+export ZSH_CUSTOM="${SCRIPTPATH}/zsh-custom"
 ZSH_THEME="geometry/geometry"
 plugins=(
   git
