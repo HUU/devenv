@@ -45,3 +45,5 @@ pip install --user pynvim flake8 yapf autoflake isort coverage ipython
 # change defualt shell to ZSH
 chsh -s /bin/zsh $(whoami)
 
+# update .zshrc
+echo "source '${DEVENV}/devenv'" >> ~/.zshrc

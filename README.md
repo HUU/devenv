@@ -12,15 +12,11 @@ Run the install script:
 ```
 ./devenv/install.sh
 ```
-Source the entrypoint (`devenv`) from your `.zshrc`:
-```
-echo 'source "${HOME}/devenv/devenv"' >> ~/.zshrc
-```
-Logout and log back in (`setup.sh` changes your login shell to ZSH).
+Logout and log back in (`install.sh` changes your login shell to ZSH).
 
 # Included
 
-* ZSH
+* zsh
   * oh-my-zsh plugin manager
   * Custom theme (geometry)
   * WORD-based navigation
@@ -31,7 +27,7 @@ Logout and log back in (`setup.sh` changes your login shell to ZSH).
   * Buffers synchronize with system clipboard
   * One Dark theme with powerline status bar
 * SpaceVim
-  * Preconfigured language support for C/C_++/Python/JS/CSS/HTML
+  * Preconfigured language support for C/C++/Python/JS/CSS/HTML
   * Fuzzy finder (denite)
   * One Dark color scheme
 * One Dark theme for Gnome Terminal
