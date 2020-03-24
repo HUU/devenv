@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
 # color scheme for Gnome terminal
 bash "${DEVENV}/env/gnome-one-dark.sh"

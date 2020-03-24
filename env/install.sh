@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
 DISTRO_NAME=$(lsb_release -d | awk '{print $2}')
 if [ "${DISTRO_NAME}" = "Ubuntu" ]; then
