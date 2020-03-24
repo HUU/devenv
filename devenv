@@ -30,6 +30,11 @@ bindkey "[C" forward-word
 bindkey "^[a" beginning-of-line
 bindkey "^[e" end-of-line
 
+
+if xset q &>/dev/null && ! pidof xcape &>/dev/null; then
+  xcape -e "Hyper_L=Control_L|b"
+fi
+
 export PATH="${HOME}/miniconda3/bin:${PATH}"
 
 # custom stuff
