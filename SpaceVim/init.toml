@@ -60,3 +60,5 @@ name = 'git'
 [[layers]]
 name = 'lang#c'
 
+[[layers]]
+name = 'denite'

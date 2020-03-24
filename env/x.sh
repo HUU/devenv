@@ -8,5 +8,7 @@ fi
 sudo cp "${DEVENV}/80_xmodmap" /etc/X11/Xsession.d/
 
 mkdir -p "${HOME}/.config/autostart"
-ln -s "${DEVENV}/xmodmap.desktop" "${HOME}/.config/autostart/10_xmodmap.desktop"
+if [[ ! -e "${HOME}/.config/autostart/10_xmodmap.desktop" ]]; then
+  ln -s "${DEVENV}/xmodmap.desktop" "${HOME}/.config/autostart/10_xmodmap.desktop"
+fi
 

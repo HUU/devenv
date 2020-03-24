@@ -31,9 +31,6 @@ sudo fc-cache -f -v
 # node-based development tools
 sudo npm install -g vscode-html-languageserver-bin remark remark-cli remark-stringify remark-frontmatter wcwidth import-js
 
-# python-based development tools
-pip3 install --user flake8 yapf autoflake isort coverage ipython
-
 # basic Data Science
 if [[ ! -e "${HOME}/miniconda3" ]]; then
   echo ">> No miniconda3 detected; installing."
@@ -41,5 +38,10 @@ if [[ ! -e "${HOME}/miniconda3" ]]; then
   bash /tmp/install_miniconda.sh -b
 fi
 
+export PATH="${HOME}/miniconda3/bin:${PATH}"
+conda install -y notebook jupyter seaborn pandas matplotlib 
+pip install --user pynvim flake8 yapf autoflake isort coverage ipython
+
+# change defualt shell to ZSH
 chsh -s /bin/zsh $(whoami)
 
