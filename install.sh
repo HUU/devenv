@@ -47,3 +47,4 @@ chsh -s /bin/zsh $(whoami)
 
 # update .zshrc
 echo "source '${DEVENV}/devenv'" >> ~/.zshrc
+ln -s "${DEVENV}.zprofile" "${HOME}/.zprofile"
